@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <title>Cadastro de Remedios</title>
+    <!-- css bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body background="./img/background.jpg">
+    <div class="container h-100 d-flex justify-content-center">
+        <div class="jumbotron my-auto">
+            <button type="button" class="btn btn-primary m-2" data-toggle="modal" data-target="#newMedicine">
+                NOVO REMEDIO
+            </button>
+            <button type="button" class="btn btn-dark m-2" data-toggle="modal" data-target="#viewMedicine">
+                VIZUALIZAR REMEDIOS CADASTRADOS
+            </button>
+            <!-- Modal 1 -->
+            <div class="modal fade" id="newMedicine" tabindex="-1" role="dialog" aria-labelledby="newMedicineLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="newMedicineLabel">CADASTRAR REMEDIO</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <form data-Form class="signup-form m-0">
+                                    <!-- codigo -->
+                                    <div class="form-group row">
+                                        <label class="col-2 col-form-label" for="inputID">Código:</label>
+                                        <input class="col-5 form-control" data-ID readonly="readonly" class="form-control" type="text" id="inputID" name="ID" />
+                                        <!--<div data-WarningName></div>-->
+                                    </div>
+                                    <!-- descricao -->
+                                    <div class="form-group">
+                                        <label for="inputDescription">Descrição</label>
+                                        <input data-Description class="form-control" type="text" id="inputDescription" name="description" placeholder="Descricao do medicamento..." />
+                                        <div data-WarningDesc></div>
+                                    </div>
+                                    <!-- pergunta -->
+                                    <div class="form-group">
+                                        <label>Genérico?</label>
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-outline-primary">
+                                                <input type="radio" name="inputIndicated" id="inputYes" value="SIM"> Sim
+                                            </label>
+                                            <label class="btn btn-outline-primary">
+                                                <input type="radio" name="inputIndicated" id="inputNo" value="NÃO"> Não
+                                            </label>
+                                        </div>
+                                        <div data-WarningGen></div>                                        
+                                    </div>
+                                    <!-- fabricante -->
+                                    <div class="form-group">
+                                        <label for="inputManufacturer">Fabricante</label>
+                                        <input data-Manufacturer class="form-control" type="text" id="inputManufacturer" name="manufacturer" placeholder="Insira o nome do fabricante..."/>
+                                        <div data-WarningManu></div>
+                                    </div>                           
+                                    <!-- sac -->
+                                    <div class="form-group">
+                                        <label for="inputSAC">SAC</label>
+                                        <input data-SAC class="form-control" type="text" id="inputSAC" name="sac" placeholder="Insira o contato do fabricante..."/>
+                                        <div data-WarningSac></div>                                        
+                                    </div>
+                                    <!-- indicacao -->
+                                    <div class="form-group">
+                                        <label for="indicated">Indicado para:</label>
+                                        <select data-Indicated id="indicated" name="indicated" class="col form-control">
+                                            <option>Selecionar...</option>
+                                            <option>Gripe ou Resfriado</option>
+                                            <option>Cefaléia</option>
+                                            <option>Tosse</option>
+                                            <option>Alergia</option>
+                                        </select>
+                                        <div data-WarningInd></div>                                        
+                                    </div>
+                                    <!-- botoes -->
+                                    <button type="submit" class="btn btn-success btn-md btn-block mt-5 mb-1">CONCLUIR</button>
+                                    <button type="button" class="btn btn-secondary btn-md btn-block" data-dismiss="modal">CANCELAR</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade bd-example-modal-lg" id="viewMedicine" tabindex="-1" role="dialog" aria-labelledby="showMedicineModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="showMedicineModal">REMEDIOS CADASTRADOS</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div data-Table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/class.js"></script>
+    <!-- script bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</footer>
+
+</html>
