@@ -1,4 +1,4 @@
-# medicide-project
+# medicine-project
 <h3>This is a university project of 3tr term of Computer Science that do a registration of new medicines and persist these data into a DB file.</h3>
 
 <h4>Made with: </h4>
