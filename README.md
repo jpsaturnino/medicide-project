@@ -1,7 +1,7 @@
 # Medicines Project
 
-
-#### 3rd Semester | Computer Science - Registration of medicines and persist these data into a DB file.
+## About the Project
+"Register medications and keep this data in a DB file"
 
 ## Made with:
 - HTML5, CSS, Bootstrap -> Page content
@@ -16,6 +16,10 @@
 - CherryPy Cors module: <code>pip install cherrypy-cors</code>
 
 ## Preview
-<img src="https://github.com/jpsaturnino/medicide-project/blob/master/init_window.png" width="30%" height="30%">
-<img src="https://github.com/jpsaturnino/medicide-project/blob/master/form_window.png" width="30%" height="30%">
-<img src="https://github.com/jpsaturnino/medicide-project/blob/master/registration_window.png" width="30%" height="30%">
+<details>
+  
+![Init Window](/init_window.png)
+![Form Window](/form_window.png)
+![Register Window](/registration_window.png)
+
+</details>
