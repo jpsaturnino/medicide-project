@@ -1,5 +1,7 @@
 # Medicines Project
-<h3>3rd Semester | Computer Science - Registration of medicines and persist these data into a DB file.</h3>
+
+
+#### 3rd Semester | Computer Science - Registration of medicines and persist these data into a DB file.
 
 ## Made with:
 - HTML5, CSS, Bootstrap -> Page content
