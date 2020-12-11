@@ -2,7 +2,7 @@
 <h3>3rd Semester | Computer Science - Registration of medicines and persist these data into a DB file.</h3>
 
 <h4>Made with: </h4>
-<p>HTML5, CSS3 -> Page content<p>
+<p>HTML5, CSS, Bootstrap -> Page content<p>
 <p>JavaScript -> Validations and get form data</p>
 <p>Python -> Transform collected data to JSON and persist the data into a DB file with SQLite3 python module.</p>
 
