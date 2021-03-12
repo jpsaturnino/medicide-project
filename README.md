@@ -23,3 +23,7 @@
 ![Register Window](/registration_window.png)
 
 </details>
+
+## Participants
+[a link](https://github.com/mariaclara-rs)
+[a link](https://github.com/rxngui)
