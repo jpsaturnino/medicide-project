@@ -25,5 +25,6 @@
 </details>
 
 ## Participants
-[a link](https://github.com/mariaclara-rs)
-[a link](https://github.com/rxngui)
+[mariaclara-rs](https://github.com/mariaclara-rs)
+<br>
+[rxngui](https://github.com/rxngui)
